@@ -1,0 +1,139 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.active {
+  background-color: #f3f4f6;
+  border-radius: 0.5rem;
+  opacity: 1;
+  color: #1e40af;
+  font-weight: 700;
+}
+
+.bg-lights-sun {
+  background-image: url('assets/gradient.svg');
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+
+
+.table :where(thead, tfoot) :where(th, td) {
+    --tw-bg-opacity: 1;
+    background-color: rgba(0, 0, 1, var(--tw-bg-opacity));
+    font-size: 0.85rem;
+    color: #f3f4f6;
+    line-height: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.table :where(tbody) :where(th,td){
+  font-weight: 500;
+  text-align: center;
+  
+}
+
+.scroll-vudera {
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #ccc #888;
+}
+
+.scroll-vudera::-webkit-scrollbar {
+  width: 8px;
+}
+
+.scroll-vudera::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 4px;
+}
+
+.scroll-vudera::-webkit-scrollbar-track {
+  background-color: #ccc;
+  border-radius: 3px;
+}
+
+
+.scroll-vud {
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #ccc #fff;
+}
+
+.scroll-vud::-webkit-scrollbar {
+  width: 0px;
+  
+}
+
+.scroll-vud::-webkit-scrollbar-thumb {
+  background-color: #fff;
+  border-radius: 2px;
+}
+
+.scroll-vud::-webkit-scrollbar-track {
+  background-color: #ccc;
+  border-radius: 3px;
+}
+
+.prose {
+  --tw-prose-body: #52525b;
+  --tw-prose-headings: #18181b;
+  --tw-prose-links: #f59e0b;
+  --tw-prose-links-hover: #d97706;
+  --tw-prose-underline: rgba(245,158,11,.2);
+  --tw-prose-underline-hover: #f59e0b;
+  --tw-prose-bold: #18181b;
+  --tw-prose-counters: #18181b;
+  --tw-prose-bullets: #18181b;
+  --tw-prose-hr: #f4f4f5;
+  --tw-prose-quote-borders: #e4e4e7;
+  --tw-prose-captions: #a1a1aa;
+  --tw-prose-code: #3f3f46;
+  --tw-prose-code-bg: hsla(240,5%,84%,.2);
+  --tw-prose-pre-code: #f4f4f5;
+  --tw-prose-pre-bg: #18181b;
+  --tw-prose-pre-border: transparent;
+  --tw-prose-th-borders: #e4e4e7;
+  --tw-prose-td-borders: #f4f4f5;
+  --tw-prose-invert-body: #a1a1aa;
+  --tw-prose-invert-headings: #e4e4e7;
+  --tw-prose-invert-links: #fbbf24;
+  --tw-prose-invert-links-hover: #fbbf24;
+  --tw-prose-invert-underline: rgba(251,191,36,.3);
+  --tw-prose-invert-underline-hover: #fbbf24;
+  --tw-prose-invert-bold: #e4e4e7;
+  --tw-prose-invert-counters: #e4e4e7;
+  --tw-prose-invert-bullets: #e4e4e7;
+  --tw-prose-invert-hr: rgba(63,63,70,.4);
+  --tw-prose-invert-quote-borders: #71717a;
+  --tw-prose-invert-captions: #71717a;
+  --tw-prose-invert-code: #d4d4d8;
+  --tw-prose-invert-code-bg: hsla(240,6%,90%,.05);
+  --tw-prose-invert-pre-code: #f4f4f5;
+  --tw-prose-invert-pre-bg: rgba(0,0,0,.4);
+  --tw-prose-invert-pre-border: hsla(240,6%,90%,.1);
+  --tw-prose-invert-th-borders: #3f3f46;
+  --tw-prose-invert-td-borders: #27272a;
+  color: var(--tw-prose-body);
+  line-height: 1.75rem;
+}
+
+.prose :where(p):not(:where([class~=not-prose] *)) {
+  margin-top: 1.75rem;
+  margin-bottom: 1.75rem;
+  color: #18181b;
+}
+
+.prose :where(img):not(:where([class~=not-prose] *)) {
+  border-radius: 1rem;
+}
+
+.images{
+  width: 32px;
+  height: 20px;
+}
+
+.text-decorate{
+  color:#090979;
+}
